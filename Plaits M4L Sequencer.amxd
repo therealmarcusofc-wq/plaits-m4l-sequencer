@@ -1,655 +1,751 @@
 {
-  "boxes" : [ {
-    "box" : {
-      "maxclass" : "newobj",
-      "text" : "live.thisdevice",
-      "numinlets" : 0,
-      "numoutlets" : 1,
-      "outlettype" : [ "object" ],
-      "patching_rect" : [ 10, 10, 120, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "PLAITS M4L SEQUENCER - DUAL VOICE SYNTHESIZER",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 10, 40, 500, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.text",
-      "text" : "SEQUENCER 1",
-      "numinlets" : 1,
-      "numoutlets" : 1,
-      "outlettype" : [ "" ],
-      "patching_rect" : [ 10, 80, 150, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.menu",
-      "items" : [ "Forward", "Reverse", "Converge", "Random" ],
-      "numinlets" : 1,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 10, 110, 140, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 160, 110, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Play Mode",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 10, 90, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Swing %",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 160, 90, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "matrixctrl",
-      "rows" : 16,
-      "cols" : 1,
-      "mode" : 2,
-      "numinlets" : 1,
-      "numoutlets" : 2,
-      "outlettype" : [ "list", "list" ],
-      "patching_rect" : [ 10, 150, 60, 320 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "16 Steps",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 10, 130, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 80, 150, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 150, 150, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Glide",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 80, 130, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Tie",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 150, 130, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.text",
-      "text" : "SEQUENCER 2",
-      "numinlets" : 1,
-      "numoutlets" : 1,
-      "outlettype" : [ "" ],
-      "patching_rect" : [ 250, 80, 150, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.menu",
-      "items" : [ "Forward", "Reverse", "Converge", "Random" ],
-      "numinlets" : 1,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 250, 110, 140, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 400, 110, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "matrixctrl",
-      "rows" : 16,
-      "cols" : 1,
-      "mode" : 2,
-      "numinlets" : 1,
-      "numoutlets" : 2,
-      "outlettype" : [ "list", "list" ],
-      "patching_rect" : [ 250, 150, 60, 320 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 320, 150, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 390, 150, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.text",
-      "text" : "QUANTIZER",
-      "numinlets" : 1,
-      "numoutlets" : 1,
-      "outlettype" : [ "" ],
-      "patching_rect" : [ 10, 490, 200, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.menu",
-      "items" : [ "Major", "Minor", "Dorian", "Phrygian", "Lydian", "Mixolydian", "Pentatonic", "Chromatic" ],
-      "numinlets" : 1,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 10, 520, 180, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.menu",
-      "items" : [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ],
-      "numinlets" : 1,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 200, 520, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Root Note",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 200, 490, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.text",
-      "text" : "OSCILLATOR 1",
-      "numinlets" : 1,
-      "numoutlets" : 1,
-      "outlettype" : [ "" ],
-      "patching_rect" : [ 10, 580, 200, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.menu",
-      "items" : [ "Sine", "Saw", "Square", "Triangle" ],
-      "numinlets" : 1,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 10, 610, 120, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 140, 610, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "PWM",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 140, 580, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 210, 610, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Feedback",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 210, 580, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 280, 610, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Drift",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 280, 580, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.text",
-      "text" : "OSCILLATOR 2 / FM",
-      "numinlets" : 1,
-      "numoutlets" : 1,
-      "outlettype" : [ "" ],
-      "patching_rect" : [ 370, 580, 200, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 370, 610, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Wavetable",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 370, 580, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0.5,
-      "max" : 8,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 440, 610, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "FM Ratio",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 440, 580, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 510, 610, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "FM Depth",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 510, 580, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.text",
-      "text" : "FILTER (SVF)",
-      "numinlets" : 1,
-      "numoutlets" : 1,
-      "outlettype" : [ "" ],
-      "patching_rect" : [ 10, 680, 200, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.menu",
-      "items" : [ "Lowpass", "Bandpass", "Highpass" ],
-      "numinlets" : 1,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 10, 710, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 20,
-      "max" : 20000,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 120, 710, 80, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Cutoff",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 120, 680, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0.1,
-      "max" : 10,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 210, 710, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Q",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 210, 680, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 280, 710, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Drive",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 280, 680, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.menu",
-      "items" : [ "12dB", "24dB" ],
-      "numinlets" : 1,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 350, 710, 80, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Poles",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 350, 680, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.text",
-      "text" : "LFO 1",
-      "numinlets" : 1,
-      "numoutlets" : 1,
-      "outlettype" : [ "" ],
-      "patching_rect" : [ 10, 770, 200, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.menu",
-      "items" : [ "Sine", "Triangle", "Saw", "Square" ],
-      "numinlets" : 1,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 10, 800, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0.1,
-      "max" : 10000,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 120, 800, 80, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Rate (Hz)",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 120, 770, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 210, 800, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Depth %",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 210, 770, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.text",
-      "text" : "MOD ENVELOPE (ADSR)",
-      "numinlets" : 1,
-      "numoutlets" : 1,
-      "outlettype" : [ "" ],
-      "patching_rect" : [ 10, 860, 300, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 1,
-      "max" : 5000,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 10, 890, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "A (ms)",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 10, 860, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 1,
-      "max" : 5000,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 80, 890, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "D (ms)",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 80, 860, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 0,
-      "max" : 100,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 150, 890, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "S %",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 150, 860, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 1,
-      "max" : 5000,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 220, 890, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "R (ms)",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 220, 860, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.text",
-      "text" : "PATTERN BANK",
-      "numinlets" : 1,
-      "numoutlets" : 1,
-      "outlettype" : [ "" ],
-      "patching_rect" : [ 10, 950, 200, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.numbox",
-      "min" : 1,
-      "max" : 16,
-      "numinlets" : 2,
-      "numoutlets" : 2,
-      "outlettype" : [ "", "" ],
-      "patching_rect" : [ 10, 980, 60, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Bank Slot",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 10, 950, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "button",
-      "numinlets" : 1,
-      "numoutlets" : 1,
-      "outlettype" : [ "bang" ],
-      "patching_rect" : [ 80, 980, 40, 40 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Save",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 80, 950, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "button",
-      "numinlets" : 1,
-      "numoutlets" : 1,
-      "outlettype" : [ "bang" ],
-      "patching_rect" : [ 130, 980, 40, 40 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "comment",
-      "text" : "Load",
-      "numinlets" : 0,
-      "numoutlets" : 0,
-      "patching_rect" : [ 130, 950, 100, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "live.text",
-      "text" : "MIDI OUTPUT",
-      "numinlets" : 1,
-      "numoutlets" : 1,
-      "outlettype" : [ "" ],
-      "patching_rect" : [ 10, 1050, 200, 22 ]
-    }
-  }, {
-    "box" : {
-      "maxclass" : "midiout",
-      "numinlets" : 1,
-      "numoutlets" : 0,
-      "patching_rect" : [ 10, 1080, 100, 22 ]
-    }
-  } ],
-  "lines" : [ ],
-  "version" : 1,
-  "formatversion" : 1,
-  "metainfo" : {
-    "default_fontsize" : 12.0,
-    "default_fontname" : "Arial"
+  "patcher" : {
+    "fileversion" : 1,
+    "appversion" : {
+      "major" : 8,
+      "minor" : 1,
+      "revision" : 2,
+      "architecture" : "x64",
+      "modernui" : 1
+    },
+    "classnamespace" : "box",
+    "rect" : [ 59, 119, 1006, 932 ],
+    "bglocked" : 0,
+    "openinpresentation" : 0,
+    "gridsize" : [ 15, 15 ],
+    "gridsnapatoms" : 1,
+    "boxanimatetime" : 200,
+    "enablehscroll" : 1,
+    "enablevscroll" : 1,
+    "digitalversion" : 1,
+    "desktopurbanism" : 0,
+    "aøstyle" : 0,
+    "boxes" : [ {
+      "box" : {
+        "maxclass" : "newobj",
+        "text" : "live.thisdevice",
+        "numinlets" : 0,
+        "numoutlets" : 1,
+        "outlettype" : [ "object" ],
+        "patching_rect" : [ 10, 10, 120, 22 ],
+        "id" : "obj-0"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "PLAITS M4L SEQUENCER - DUAL VOICE SYNTHESIZER",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 10, 40, 500, 22 ],
+        "id" : "obj-1"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.text",
+        "text" : "SEQUENCER 1",
+        "numinlets" : 1,
+        "numoutlets" : 1,
+        "outlettype" : [ "" ],
+        "patching_rect" : [ 10, 80, 150, 22 ],
+        "id" : "obj-2"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.menu",
+        "items" : [ "Forward", "Reverse", "Converge", "Random" ],
+        "numinlets" : 1,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 10, 110, 140, 22 ],
+        "id" : "obj-3"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 160, 110, 60, 22 ],
+        "id" : "obj-4"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Play Mode",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 10, 90, 100, 22 ],
+        "id" : "obj-5"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Swing %",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 160, 90, 100, 22 ],
+        "id" : "obj-6"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "matrixctrl",
+        "rows" : 16,
+        "cols" : 1,
+        "mode" : 2,
+        "numinlets" : 1,
+        "numoutlets" : 2,
+        "outlettype" : [ "list", "list" ],
+        "patching_rect" : [ 10, 150, 60, 320 ],
+        "id" : "obj-7"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "16 Steps",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 10, 130, 100, 22 ],
+        "id" : "obj-8"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 80, 150, 60, 22 ],
+        "id" : "obj-9"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 150, 150, 60, 22 ],
+        "id" : "obj-10"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Glide",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 80, 130, 100, 22 ],
+        "id" : "obj-11"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Tie",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 150, 130, 100, 22 ],
+        "id" : "obj-12"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.text",
+        "text" : "SEQUENCER 2",
+        "numinlets" : 1,
+        "numoutlets" : 1,
+        "outlettype" : [ "" ],
+        "patching_rect" : [ 250, 80, 150, 22 ],
+        "id" : "obj-13"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.menu",
+        "items" : [ "Forward", "Reverse", "Converge", "Random" ],
+        "numinlets" : 1,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 250, 110, 140, 22 ],
+        "id" : "obj-14"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 400, 110, 60, 22 ],
+        "id" : "obj-15"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "matrixctrl",
+        "rows" : 16,
+        "cols" : 1,
+        "mode" : 2,
+        "numinlets" : 1,
+        "numoutlets" : 2,
+        "outlettype" : [ "list", "list" ],
+        "patching_rect" : [ 250, 150, 60, 320 ],
+        "id" : "obj-16"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 320, 150, 60, 22 ],
+        "id" : "obj-17"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 390, 150, 60, 22 ],
+        "id" : "obj-18"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.text",
+        "text" : "QUANTIZER",
+        "numinlets" : 1,
+        "numoutlets" : 1,
+        "outlettype" : [ "" ],
+        "patching_rect" : [ 10, 490, 200, 22 ],
+        "id" : "obj-19"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.menu",
+        "items" : [ "Major", "Minor", "Dorian", "Phrygian", "Lydian", "Mixolydian", "Pentatonic", "Chromatic" ],
+        "numinlets" : 1,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 10, 520, 180, 22 ],
+        "id" : "obj-20"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.menu",
+        "items" : [ "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B" ],
+        "numinlets" : 1,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 200, 520, 100, 22 ],
+        "id" : "obj-21"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Root Note",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 200, 490, 100, 22 ],
+        "id" : "obj-22"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.text",
+        "text" : "OSCILLATOR 1",
+        "numinlets" : 1,
+        "numoutlets" : 1,
+        "outlettype" : [ "" ],
+        "patching_rect" : [ 10, 580, 200, 22 ],
+        "id" : "obj-23"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.menu",
+        "items" : [ "Sine", "Saw", "Square", "Triangle" ],
+        "numinlets" : 1,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 10, 610, 120, 22 ],
+        "id" : "obj-24"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 140, 610, 60, 22 ],
+        "id" : "obj-25"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "PWM",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 140, 580, 100, 22 ],
+        "id" : "obj-26"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 210, 610, 60, 22 ],
+        "id" : "obj-27"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Feedback",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 210, 580, 100, 22 ],
+        "id" : "obj-28"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 280, 610, 60, 22 ],
+        "id" : "obj-29"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Drift",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 280, 580, 100, 22 ],
+        "id" : "obj-30"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.text",
+        "text" : "OSCILLATOR 2 / FM",
+        "numinlets" : 1,
+        "numoutlets" : 1,
+        "outlettype" : [ "" ],
+        "patching_rect" : [ 370, 580, 200, 22 ],
+        "id" : "obj-31"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 370, 610, 60, 22 ],
+        "id" : "obj-32"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Wavetable",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 370, 580, 100, 22 ],
+        "id" : "obj-33"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0.5,
+        "max" : 8,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 440, 610, 60, 22 ],
+        "id" : "obj-34"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "FM Ratio",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 440, 580, 100, 22 ],
+        "id" : "obj-35"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 510, 610, 60, 22 ],
+        "id" : "obj-36"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "FM Depth",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 510, 580, 100, 22 ],
+        "id" : "obj-37"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.text",
+        "text" : "FILTER (SVF)",
+        "numinlets" : 1,
+        "numoutlets" : 1,
+        "outlettype" : [ "" ],
+        "patching_rect" : [ 10, 680, 200, 22 ],
+        "id" : "obj-38"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.menu",
+        "items" : [ "Lowpass", "Bandpass", "Highpass" ],
+        "numinlets" : 1,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 10, 710, 100, 22 ],
+        "id" : "obj-39"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 20,
+        "max" : 20000,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 120, 710, 80, 22 ],
+        "id" : "obj-40"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Cutoff",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 120, 680, 100, 22 ],
+        "id" : "obj-41"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0.1,
+        "max" : 10,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 210, 710, 60, 22 ],
+        "id" : "obj-42"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Q",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 210, 680, 100, 22 ],
+        "id" : "obj-43"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 280, 710, 60, 22 ],
+        "id" : "obj-44"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Drive",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 280, 680, 100, 22 ],
+        "id" : "obj-45"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.menu",
+        "items" : [ "12dB", "24dB" ],
+        "numinlets" : 1,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 350, 710, 80, 22 ],
+        "id" : "obj-46"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Poles",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 350, 680, 100, 22 ],
+        "id" : "obj-47"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.text",
+        "text" : "LFO 1",
+        "numinlets" : 1,
+        "numoutlets" : 1,
+        "outlettype" : [ "" ],
+        "patching_rect" : [ 10, 770, 200, 22 ],
+        "id" : "obj-48"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.menu",
+        "items" : [ "Sine", "Triangle", "Saw", "Square" ],
+        "numinlets" : 1,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 10, 800, 100, 22 ],
+        "id" : "obj-49"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0.1,
+        "max" : 10000,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 120, 800, 80, 22 ],
+        "id" : "obj-50"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Rate (Hz)",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 120, 770, 100, 22 ],
+        "id" : "obj-51"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 210, 800, 60, 22 ],
+        "id" : "obj-52"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Depth %",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 210, 770, 100, 22 ],
+        "id" : "obj-53"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.text",
+        "text" : "MOD ENVELOPE (ADSR)",
+        "numinlets" : 1,
+        "numoutlets" : 1,
+        "outlettype" : [ "" ],
+        "patching_rect" : [ 10, 860, 300, 22 ],
+        "id" : "obj-54"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 1,
+        "max" : 5000,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 10, 890, 60, 22 ],
+        "id" : "obj-55"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "A (ms)",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 10, 860, 60, 22 ],
+        "id" : "obj-56"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 1,
+        "max" : 5000,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 80, 890, 60, 22 ],
+        "id" : "obj-57"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "D (ms)",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 80, 860, 60, 22 ],
+        "id" : "obj-58"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 0,
+        "max" : 100,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 150, 890, 60, 22 ],
+        "id" : "obj-59"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "S %",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 150, 860, 60, 22 ],
+        "id" : "obj-60"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 1,
+        "max" : 5000,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 220, 890, 60, 22 ],
+        "id" : "obj-61"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "R (ms)",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 220, 860, 60, 22 ],
+        "id" : "obj-62"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.text",
+        "text" : "PATTERN BANK",
+        "numinlets" : 1,
+        "numoutlets" : 1,
+        "outlettype" : [ "" ],
+        "patching_rect" : [ 10, 950, 200, 22 ],
+        "id" : "obj-63"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.numbox",
+        "min" : 1,
+        "max" : 16,
+        "numinlets" : 2,
+        "numoutlets" : 2,
+        "outlettype" : [ "", "" ],
+        "patching_rect" : [ 10, 980, 60, 22 ],
+        "id" : "obj-64"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Bank Slot",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 10, 950, 100, 22 ],
+        "id" : "obj-65"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "button",
+        "numinlets" : 1,
+        "numoutlets" : 1,
+        "outlettype" : [ "bang" ],
+        "patching_rect" : [ 80, 980, 40, 40 ],
+        "id" : "obj-66"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Save",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 80, 950, 100, 22 ],
+        "id" : "obj-67"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "button",
+        "numinlets" : 1,
+        "numoutlets" : 1,
+        "outlettype" : [ "bang" ],
+        "patching_rect" : [ 130, 980, 40, 40 ],
+        "id" : "obj-68"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "comment",
+        "text" : "Load",
+        "numinlets" : 0,
+        "numoutlets" : 0,
+        "patching_rect" : [ 130, 950, 100, 22 ],
+        "id" : "obj-69"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "live.text",
+        "text" : "MIDI OUTPUT",
+        "numinlets" : 1,
+        "numoutlets" : 1,
+        "outlettype" : [ "" ],
+        "patching_rect" : [ 10, 1050, 200, 22 ],
+        "id" : "obj-70"
+      }
+    }, {
+      "box" : {
+        "maxclass" : "newobj",
+        "text" : "midiout",
+        "numinlets" : 1,
+        "numoutlets" : 0,
+        "patching_rect" : [ 10, 1080, 100, 22 ],
+        "id" : "obj-71"
+      }
+    } ],
+    "lines" : [ ],
+    "version" : 1,
+    "formatversion" : 1,
+    "metainfo" : {
+      "default_fontsize" : 12.0,
+      "default_fontname" : "Arial"
+    },
+    "patching_rect" : [ 0, 0, 640, 1120 ]
   },
-  "patching_rect" : [ 0, 0, 640, 1120 ]
+  "version" : 1
 }
