@@ -1,0 +1,31 @@
+# Build artifacts
+*.mxo/
+*.mxe64
+*.mxe
+*.so
+*.dylib
+*.o
+*.a
+*.dll
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Max/Live
+crash.log
+*.bak
+*.tmp
+
+# Dependencies
+/externals/max-sdk/
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+*.exe
