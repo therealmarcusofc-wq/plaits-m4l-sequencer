@@ -1,0 +1,34 @@
+CC = gcc
+CFLAGS = -fPIC -shared -O2
+LDFLAGS = -lm
+
+# Max SDK paths
+MAXSDKPATH ?= /path/to/max-sdk
+MAXINCLUDEPATH = -I$(MAXSDKPATH)/c74support/max/common -I$(MAXSDKPATH)/c74support/msp/common
+
+# Architecture detection
+ARCH := $(shell uname -m)
+ifeq ($(ARCH),x86_64)
+	CFLAGS += -m64
+	LDFLAGS += -m64
+else ifeq ($(ARCH),aarch64)
+	CFLAGS += -march=armv8-a
+endif
+
+TARGETS = plaits.osc~.so plaits.filter~.so plaits.seq.so
+
+.PHONY: all clean
+
+all: $(TARGETS)
+
+plaits.osc~.so: plaits-osc.c
+	$(CC) $(CFLAGS) $(MAXINCLUDEPATH) -o $@ $< $(LDFLAGS)
+
+plaits.filter~.so: plaits-filter.c
+	$(CC) $(CFLAGS) $(MAXINCLUDEPATH) -o $@ $< $(LDFLAGS)
+
+plaits.seq.so: plaits-seq.c
+	$(CC) $(CFLAGS) $(MAXINCLUDEPATH) -o $@ $< $(LDFLAGS)
+
+clean:
+	rm -f plaits.*.so
