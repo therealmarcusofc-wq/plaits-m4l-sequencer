@@ -1,0 +1,39 @@
+CC = gcc
+CFLAGS = -fPIC -shared -O2 -I/opt/homebrew/include
+LDFLAGS = -L/opt/homebrew/lib -lm
+
+# Max SDK paths
+MAXSDKPATH ?= /Volumes/Macintosh\ HD/Applications/Max.app/Contents/Resources/C74/core
+MAXINCLUDEPATH = -I$(MAXSDKPATH)/max/common -I$(MAXSDKPATH)/msp/common
+
+ifeq ($(ARCH),arm64)
+	CFLAGS += -arch arm64
+	LDFLAGS += -arch arm64
+else
+	CFLAGS += -arch x86_64
+	LDFLAGS += -arch x86_64
+endif
+
+TARGETS = plaits.osc~.mxo plaits.filter~.mxo plaits.seq.mxo
+
+.PHONY: all clean
+
+all: $(TARGETS)
+
+plaits.osc~.mxo: plaits-osc.c
+	$(CC) $(CFLAGS) $(MAXINCLUDEPATH) -o $@ $< $(LDFLAGS)
+	mkdir -p $@/Contents/MacOS
+	mv $@ $@/Contents/MacOS/plaits.osc~
+
+plaits.filter~.mxo: plaits-filter.c
+	$(CC) $(CFLAGS) $(MAXINCLUDEPATH) -o $@ $< $(LDFLAGS)
+	mkdir -p $@/Contents/MacOS
+	mv $@ $@/Contents/MacOS/plaits.filter~
+
+plaits.seq.mxo: plaits-seq.c
+	$(CC) $(CFLAGS) $(MAXINCLUDEPATH) -o $@ $< $(LDFLAGS)
+	mkdir -p $@/Contents/MacOS
+	mv $@ $@/Contents/MacOS/plaits.seq
+
+clean:
+	rm -rf plaits.*.mxo
